@@ -1,0 +1,36 @@
+{
+  "name": "yiwise-tracing",
+  "version": "1.19.0",
+  "description": "前端埋点，性能监控",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "jsdelivr": "dist/index.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup --config build/rollup.config.dev.js -w",
+    "build": "rollup --config build/rollup.config.build.js",
+    "rm-dist": "rimraf dist"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.15.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.yiwise.local:zuoheng/yiwise-tracing.git"
+  },
+  "author": "zuoheng",
+  "license": "ISC",
+  "dependencies": {
+    "md5": "^2.3.0",
+    "rollup-plugin-commonjs": "^10.1.0"
+  }
+}
